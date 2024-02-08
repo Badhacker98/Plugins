@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def start():
-    return "BAD Started Successfully"
+    return "PbxBot Started Successfully"
 
-os.system("python3 -m TelethonHell")
+os.system("python3 -m TelethonPbx")
 app.run(port=5000)

@@ -67,7 +67,7 @@ def load_module(shortname):
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["TelethonPbx.plugins." + shortname] = mod
-        LOGS.info("🙈 ᴘʙxʙᴏᴛ 🙈 - Successfully Imported " + shortname)
+        LOGS.info("🤡 ᴘʙxʙᴏᴛ ❤️ - Successfully Imported " + shortname)
 
 
 # remove plugins

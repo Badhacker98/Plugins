@@ -48,20 +48,20 @@ async def clients_list():
 async def client_id(event, botid=None, is_html=None):
     if botid is not None:
         uid = await event.client(GetFullUserRequest(botid))
-        ForGo10God = uid.users[0].id
+        II_BAD_BBY_II = uid.users[0].id
         PBX_USER = uid.users[0].first_name
-        _mention = f"[{PBX_USER}](tg://user?id={ForGo10God})"
-        _html = f"<a href='tg://user?id={ForGo10God}'>{PBX_USER}</a>"
+        _mention = f"[{PBX_USER}](tg://user?id={II_BAD_BBY_II})"
+        _html = f"<a href='tg://user?id={II_BAD_BBY_II}'>{PBX_USER}</a>"
         Pbx_mention = _html if is_html else _mention
     else:
         client = await event.client.get_me()
         uid = get_peer_id(client)
-        ForGo10God = uid
+        II_BAD_BBY_II = uid
         PBX_USER = client.first_name
-        _mention = f"[{PBX_USER}](tg://user?id={ForGo10God})"
-        _html = f"<a href='tg://user?id={ForGo10God}'>{PBX_USER}</a>"
+        _mention = f"[{PBX_USER}](tg://user?id={II_BAD_BBY_II})"
+        _html = f"<a href='tg://user?id={II_BAD_BBY_II}'>{PBX_USER}</a>"
         Pbx_mention = _html if is_html else _mention
-    return ForGo10God, PBX_USER, Pbx_mention
+    return II_BAD_BBY_II, PBX_USER, Pbx_mention
 
 
 async def get_user_id(event, ids):

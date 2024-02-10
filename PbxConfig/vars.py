@@ -8,4 +8,4 @@ else:
     from .config import Config  # noqa
 
 
-# hellbot
+# Pbxbot

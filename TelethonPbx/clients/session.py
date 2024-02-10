@@ -8,7 +8,7 @@ from PbxConfig import Config
 
 
 def validate_session(session):
-    if "==Pbx" and "bot==" in session.lower():
+    if "==HELL" and "bot==" in session.lower():
         new_session = session[6:-5]
         return str(new_session)
     else:

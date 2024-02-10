@@ -19,7 +19,7 @@ def validate_session(session):
 if Config.PBXBOT_SESSION:
     session = StringSession(validate_session(Config.PBXBOT_SESSION))
 else:
-    session = "Pbxbot"
+    session = "PBXBOT"
 
 try:
     Pbx = TelegramClient(

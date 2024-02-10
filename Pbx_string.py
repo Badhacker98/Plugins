@@ -44,7 +44,7 @@ def main():
             while True:
                 library = input("\nYour Choice: ")
                 if library == "1":
-                    generate_Pbxbot_session()
+                    generate_hellbot_session()
                     break
                 elif library == "2":
                     generate_telethon_session()

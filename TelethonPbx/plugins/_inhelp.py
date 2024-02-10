@@ -447,7 +447,7 @@ if Config.BOT_USERNAME and tbot:
                 result,
                 buttons=[
                     Button.inline(
-                        f"{PbxPbx_emoji} Return {Pbx_emoji}",
+                        f"{Pbx_emoji} Return {Pbx_emoji}",
                         data=f"Information[{page}]({cmd})",
                     )
                 ],

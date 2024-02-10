@@ -72,7 +72,7 @@ async def start_Pbxbot():
         LOGS.info("••• Starting to load Plugins •••")
         await plug_load("TelethonPbx/plugins/*.py")
         await plug_channel(Pbx, Config.PLUGIN_CHANNEL)
-        LOGS.info("⚡ Your PBxBot Is Now Working ⚡")
+        LOGS.info("👻 Your PBxBot Is Now Working 🤡")
         LOGS.info("Join @ll_THE_BAD_BOT_ll to get help regarding PBxBot.")
         LOGS.info(f"» Total Clients = {str(total)} «")
         await Pbx_is_on(total)

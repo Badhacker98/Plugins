@@ -8,7 +8,7 @@ from PbxConfig import Config
 
 
 def validate_session(session):
-    if "==SUKH" and "PBX==" in session.lower():
+    if "==Pbx" and "bot==" in session.lower():
         new_session = session[6:-5]
         return str(new_session)
     else:
@@ -19,7 +19,7 @@ def validate_session(session):
 if Config.PBXBOT_SESSION:
     session = StringSession(validate_session(Config.PBXBOT_SESSION))
 else:
-    session = "PbxBOT"
+    session = "Pbxbot"
 
 try:
     Pbx = TelegramClient(

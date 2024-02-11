@@ -116,7 +116,7 @@ if Config.BOT_USERNAME and tbot:
                 ],
                 [
                     Button.url("🍁𝐃ᴇᴠᴇʟᴏᴘᴇʀ🍁", f"https://t.me/II_BAD_BBY_II"),
-                    Button.url("My Group", f"https://t.me/{my_group}"),
+                    Button.url("𝐆ʀᴏᴜᴘ 𝐒ᴜᴘᴘᴏʀᴛ", f"https://t.me/{my_group}"),
                 ],
             ]
             a = gvarstat("ALIVE_PIC")

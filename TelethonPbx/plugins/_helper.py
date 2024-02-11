@@ -15,11 +15,11 @@ msg = f"""
 
 @Pbx_cmd(pattern="repo$")
 async def repo(event):
-    ForGo10God, _, _ = await client_id(event)
+    II_BAD_BBY_II, _, _ = await client_id(event)
     try:
         Pbx = await event.client.inline_query(Config.BOT_USERNAME, "repo")
         await Pbx[0].click(event.chat_id)
-        if event.sender_id == ForGo10God:
+        if event.sender_id == II_BAD_BBY_II:
             await event.delete()
     except (noin, dedbot):
         await eor(event, msg)

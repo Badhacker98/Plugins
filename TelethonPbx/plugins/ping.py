@@ -74,7 +74,7 @@ async def is_limited(event):
 
 @Pbx_cmd(pattern="kickme$")
 async def leave(event):
-    Pbx = await eor(event, "🥹 𝐆ᴏᴏᴅ 𝐁ʏᴇ  [🦋](https://t.me/THE_DRAMA_CLUB_01) [❤️](https://t.me/PANJABI_MEHKMA) 🥱")
+    Pbx = await eor(event, "🥹 𝐆ᴏᴏᴅ 𝐁ʏᴇ  [🕊️⃝‌ᴘʙx ❤️ᥫ᭡፝֟፝֟](https://t.me/ll_THE_BAD_BOT_ll) 🥱")
     time.sleep(1)
     if "-" in str(event.chat_id):
         await event.client(LeaveChannelRequest(event.chat_id))

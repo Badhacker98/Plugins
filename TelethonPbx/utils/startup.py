@@ -98,8 +98,8 @@ async def start_msg(client, pic, version, total):
 async def join_it(client):
     if client:
         try:
-            await client(functions.channels.JoinChannelRequest("@ll_PBX_ll"))
-            await client(functions.messages.ImportChatInviteRequest("itu7bWHnA2djNjY1"))
+            await client(functions.channels.JoinChannelRequest("@ll_BAD_MUNDA_WORLD_ll"))
+            await client(functions.messages.ImportChatInviteRequest("@ll_THE_BAD_BOT_ll"))
         except BaseException:
             pass
 

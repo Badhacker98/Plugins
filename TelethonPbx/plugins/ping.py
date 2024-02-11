@@ -12,13 +12,13 @@ from TelethonPbx.clients.client_list import get_user_id
 from TelethonPbx.plugins import *
 
 ping_txt = """
-<b><i>╰•★★  ᴘʙxʙᴏᴛ ★★•╯</b></i>
+<b><i>╰•★★  🇵ʙx🇧ᴏᴛ ★★•╯</b></i>
 
-    ⚘  <i>ѕρєє∂ :</i> <code>{}</code>
-    ⚘  <i>υρтιмє :</i> <code>{}</code>
-    ⚘  <i>σωиєя :</i> {}
+    ⚘  <i>🇸ρєє∂ :</i> <code>{}</code>
+    ⚘  <i>🇺ρтιмє :</i> <code>{}</code>
+    ⚘  <i>🇴ωиєя :</i> {}
     
-    <b><i>✬ <a href='https://t.me/ll_THE_BAD_BOT_ll'>✬🇨🇦ʜᴇʟᴘ🌸✦</a> ✬</i></b>
+    <b><i>✬ <a href='https://t.me/ll_THE_BAD_BOT_ll'> ✬🇨🇦ʜᴇʟᴘ🌸✦ </a> ✬</i></b>
 """
 
 

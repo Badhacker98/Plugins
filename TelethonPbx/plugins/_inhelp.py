@@ -58,7 +58,7 @@ def button(page, modules):
 if Config.BOT_USERNAME and tbot:
     @tbot.on(InlineQuery)
     async def inline_handler(event):
-        ForGo10God, Pbx_USER, Pbx_mention = await client_id(event, event.query.user_id)
+        II_BAD_BBY_II, Pbx_USER, Pbx_mention = await client_id(event, event.query.user_id)
         builder = event.builder
         result = None
         query = event.text
@@ -106,7 +106,7 @@ if Config.BOT_USERNAME and tbot:
             )
             alv_btn = [
                 [
-                    Button.url(f"{alive_name}", f"tg://openmessage?user_id={ForGo10God}")
+                    Button.url(f"{alive_name}", f"tg://openmessage?user_id={II_BAD_BBY_II}")
                 ],
                 [
                     Button.url("🍁𝐃ᴇᴠᴇʟᴏᴘᴇʀ🍁", f"https://t.me/II_BAD_BBY_II"),

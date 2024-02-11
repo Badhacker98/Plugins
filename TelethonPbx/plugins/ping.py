@@ -38,8 +38,8 @@ async def pong(event):
                 pic_list.append(c)
         PIC = choice(pic_list)
     else:
-        PIC = "https://telegra.ph/file/14166208a7bf871cb0aca.jpg"
-    Pbx = await eor(event, "`·.·★ ℘ıŋɠ ★·.·´")
+        PIC = "https://te.legra.ph/file/3187f598c0e978e3b4441.jpg"
+    Pbx = await eor(event, "`·.·★ ᴘʙx ★·.·´")
     II_BAD_BBY_II, Pbx_USER, Pbx_mention = await client_id(event, is_html=True)
     uptime = await get_time((time.time() - StartTime))
     end = datetime.datetime.now()

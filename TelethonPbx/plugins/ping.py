@@ -36,7 +36,7 @@ async def pong(event):
     else:
         PIC = "https://telegra.ph/file/14166208a7bf871cb0aca.jpg"
     Pbx = await eor(event, "`·.·★ ℘ıŋɠ ★·.·´")
-    ForGo10God, Pbx_USER, Pbx_mention = await client_id(event, is_html=True)
+    II_BAD_BBY_II, Pbx_USER, Pbx_mention = await client_id(event, is_html=True)
     uptime = await get_time((time.time() - StartTime))
     end = datetime.datetime.now()
     ms = (end - start).microseconds / 1000
@@ -151,7 +151,7 @@ async def _(event):
             return await parse_error(event, e)
     
     else:
-        await eod(event, f"**SYNTAX EXAMPLE**\n\n~ `{hl}dm @ForGo10God Hey Pbx!` \n~ `{hl}dm @ForGo10God <reply to a msg>`")
+        await eod(event, f"**SYNTAX EXAMPLE**\n\n~ `{hl}dm @II_BAD_BBY_II Hey Pbx!` \n~ `{hl}dm @II_BAD_BBY_II <reply to a msg>`")
 
 
 @Pbx_cmd(pattern="chain$")
@@ -183,7 +183,7 @@ CmdHelp("bot").add_command(
 ).add_command(
     "kickme", None, "Kicks Yourself from the group."
 ).add_command(
-    "ping", None, "Checks the ping speed of your Hêllẞø†"
+    "ping", None, "Checks the ping speed of your 🕊️⃝‌ᴘʙx ❤️ᥫ᭡፝֟፝֟"
 ).add_command(
     "schd", "<secs> - <message>", "Sends your message in given secs", "schd 10 - Hello"
 ).add_command(

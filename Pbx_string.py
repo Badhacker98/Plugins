@@ -33,14 +33,14 @@ except:
 
 
 def main():
-    print("T E A M    H E L L B O T   ! !")
-    print("Hello!! Welcome to HellBot Session Generator\n")
+    print("T E A M    P B X    ! !")
+    print("Hello!! Welcome to PbxBot Session Generator\n")
     print("Human Verification Required !!")
     while True:
         verify = int(randint(1, 50))
         okvai = int(input(f"Enter {verify} to continue: "))
         if okvai == verify:
-            print("\nChoose the string session type: \n1. HellBot \n2. Telethon \n3. Pyrogram \n4. Instagram")
+            print("\nChoose the string session type: \n1. Pbx \n2. Telethon \n3. Pyrogram \n4. Instagram")
             while True:
                 library = input("\nYour Choice: ")
                 if library == "1":
@@ -63,17 +63,17 @@ def main():
 
 
 def generate_hellbot_session():
-    print("!!! HELLBOT SESSION !!!")
-    print("One session for all HellBot's Project.")
+    print("!!! PbxBOT SESSION !!!")
+    print("One session for all PbxBot's Project.")
     api_id = int(input("\nEnter APP ID here: "))
     api_hash = input("\nEnter API_HASH here: ")
     with PClient(name="helluser", api_id=api_id, api_hash=api_hash, in_memory=True) as hell:
-        print("\nYour HELLBOT SESSION is saved in your telegram saved messages.")
+        print("\nYour PBXBOT SESSION is saved in your telegram saved messages.")
         _session = hell.export_session_string()
         hell_session = hellbot_session(_session)
         hell.send_message(
             "me",
-            f"#HELLBOT_SESSION \n\n`{hell_session}`",
+            f"#PBXBOT_SESSION \n\n`{hell_session}`",
         )
 
 
@@ -82,10 +82,10 @@ def generate_pyro_session():
     APP_ID = int(input("\nEnter APP ID here: "))
     API_HASH = input("\nEnter API HASH here: ")
     with PClient(name="helluser", api_id=APP_ID, api_hash=API_HASH, in_memory=True) as hellbot:
-        print("\nYour HellBot Session Is sent in your Telegram Saved Messages.")
+        print("\nYour PBXBot Session Is sent in your Telegram Saved Messages.")
         hellbot.send_message(
             "me",
-            f"#HELLBOT #PYROGRAM\n\n`{hellbot.export_session_string()}`",
+            f"#PBXBOT #PYROGRAM\n\n`{hellbot.export_session_string()}`",
         )
 
 
@@ -94,10 +94,10 @@ def generate_telethon_session():
     APP_ID = int(input("\nEnter APP ID here: "))
     API_HASH = input("\nEnter API HASH here: ")
     with TelegramClient(StringSession(), APP_ID, API_HASH) as hellbot:
-        print("\nYour HellBot Session Is sent in your Telegram Saved Messages.")
+        print("\nYour PbxBot Session Is sent in your Telegram Saved Messages.")
         hellbot.send_message(
             "me",
-            f"#HELLBOT #TELETHON \n\n`{hellbot.session.save()}`",
+            f"#PBXBOT #TELETHON \n\n`{hellbot.session.save()}`",
         )
 
 
@@ -182,4 +182,4 @@ def hellbot_session(session):
 
 
 main()
-    
+                    

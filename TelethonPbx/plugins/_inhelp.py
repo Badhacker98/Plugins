@@ -112,11 +112,12 @@ if Config.BOT_USERNAME and tbot:
             )
             alv_btn = [
                 [
-                    Button.url(f"{alive_name}", f"tg://openmessage?user_id={II_BAD_BBY_II}")
+                    Button.url(f"{alive_name}", f"tg://openmessage?user_id={II_BAD_BBY_II}"),
+                    Button.url("✨𝐑ᴇᴘᴏ💫", f"https://t.me/II_BAD_BBY_II")
                 ],
                 [
-                    Button.url("🍁𝐃ᴇᴠᴇʟᴏᴘᴇʀ🍁", f"https://t.me/II_BAD_BBY_II"),
-                    Button.url("𝐆ʀᴏᴜᴘ 𝐒ᴜᴘᴘᴏʀᴛ", f"https://t.me/{my_group}"),
+                    Button.url("💫𝐃ᴇᴠᴇʟᴏᴘᴇʀ✨", f"https://t.me/II_BAD_BBY_II"),
+                    Button.url("✨𝐆ʀᴏᴜᴘ 𝐒ᴜᴘᴘᴏʀᴛ💫", f"https://t.me/{my_group}"),
                 ],
             ]
             a = gvarstat("ALIVE_PIC")

@@ -14,9 +14,9 @@ from TelethonPbx.plugins import *
 ping_txt = """
 <b><i>╰•★★  🅟🅑🅧 🅑🅞🅣 ★★•╯</b></i>
 
-    ⚘  <i>🇸ρєє∂ :</i> <code>{}</code>
-    ⚘  <i>🇺ρтιмє :</i> <code>{}</code>
-    ⚘  <i>🇴ωиєя :</i> {}
+    ⚘  <i>🆂ρєє∂ :</i> <code>{}</code>
+    ⚘  <i>🆄ρтιмє :</i> <code>{}</code>
+    ⚘  <i>🅾ωиєя :</i> {}
     
     <b><i>✬ <a href='https://t.me/ll_THE_BAD_BOT_ll'> ✬🇨🇦ʜᴇʟᴘ🌸✦ </a> ✬</i></b>
 """

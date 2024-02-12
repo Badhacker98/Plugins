@@ -6,9 +6,9 @@ from TelethonPbx.plugins import *
 
 
 msg = f"""
-**⚡ ᴘʙxᴜsᴇʀ ʙᴏᴛ  ⚡**
-  •        [📑 Repo 📑](https://github.com/MXNIHACKER/DevilXUser)
-  •        [𝐏ʙx 𝐁ᴏᴛ ](https://t.me/ll_THE_BAD_BOT_ll)
+**💫 ᴘʙxᴜsᴇʀ ʙᴏᴛ  💫**
+  •        [✨ Repo ✨](https://github.com/Badhacker98/PbXbot/fork)
+  •        [𝐏ʙx 𝐒ᴜᴘᴘᴏʀᴛ ](https://t.me/ll_THE_BAD_BOT_ll)
   •  ©️ {Pbx_channel} ™
 """
 

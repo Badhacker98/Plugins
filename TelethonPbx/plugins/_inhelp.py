@@ -311,7 +311,7 @@ if Config.BOT_USERNAME and tbot:
             if a:
                 help_pic = a.split(" ")[0]
             else:
-                help_pic = "https://telegra.ph/file/d750358e9918babcca077.mp4"
+                help_pic = "https://telegra.ph/file/4ab474cb621c444c697ae.jpg"
 
             if help_pic == "DISABLE":
                 await event.edit(

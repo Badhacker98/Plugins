@@ -45,7 +45,7 @@ class Config(object):
     TAG_LOGGER = int(os.environ.get("TAG_LOGGER", 0))
     THUMB_IMG = os.environ.get("THUMB_IMG", "./PbxConfig/resources/pics/Pbxbot_logo.jpg")
     UNLOAD = list(os.environ.get("UNLOAD", "").split())
-    UPSTREAM_REPO = os.environ.get("UPSTREAM_REPO", "https://github.com/Badhacker98/sukhBot")
+    UPSTREAM_REPO = os.environ.get("UPSTREAM_REPO", "https://github.com/Badhacker98/PbXbot")
     UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH", "master")
     WEATHER_API = os.environ.get("WEATHER_API", None)
 

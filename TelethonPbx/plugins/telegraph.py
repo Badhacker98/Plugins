@@ -77,7 +77,7 @@ async def _(event):
                 with open(downloaded_file_name, "rb") as fd:
                     m_list = fd.readlines()
                 for m in m_list:
-                    page_content += m.decode("UTF-4") + "\n"
+                    page_content += m.decode("UTF-10") + "\n"
                 os.remove(downloaded_file_name)
             page_content = page_content.replace("\n", "<br>")
             try:

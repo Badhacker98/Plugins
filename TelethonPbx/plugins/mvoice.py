@@ -1,6 +1,6 @@
 from . import *
 
-@pbx_cmd(pattern="mev(?:\s|$)([\s\S]*)")
+@Pbx_cmd(pattern="mev(?:\s|$)([\s\S]*)")
 async def _(event):
     pbx = event.text[5:]
     rply = await event.get_reply_message()

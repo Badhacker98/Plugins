@@ -68,17 +68,8 @@ async def _(event):
                 title_of_page = optional_title
             page_content = reply.message
             if reply.media:
-                if page_content != "":
-                    title_of_page = page_content
-                downloaded_file_name = await event.client.download_media(
-                    reply, Config.TMP_DOWNLOAD_DIRECTORY
-                )
-                m_list = None
-                with open(downloaded_file_name, "rb") as fd:
-                    m_list = fd.readlines()
-                for m in m_list:
-                    page_content += m.decode("UTF-8") + "\n"
-                os.remove(downloaded_file_name)
+                if reply.media:
+    return await Pbx.edit(f"Media aren't supported for Text Telegraph")
             page_content = page_content.replace("\n", "<br>")
             try:
                 response = telegraph.create_page(title_of_page, html_content=page_content)

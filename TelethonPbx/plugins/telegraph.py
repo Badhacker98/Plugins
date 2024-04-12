@@ -109,7 +109,8 @@ async def _(event):
     else:
         title = query[0].strip()
     link = await telegraph_paste(title, content, auth, url)
-    await Pbx.edit(f"Created telegraph post! \n\n◈ Title: {title} 
+    await Pbx.edit(f"**Created telegraph post!** \n\n__◈ Title:__ `{title}` \n__◈ Author:__ [{auth}]({url}) \n__◈ Link:__ {link}", link_preview=False)
+    
 
 
 CmdHelp("telegraph").add_command(

@@ -38,7 +38,7 @@ async def _(event):
             end = datetime.datetime.now()
             ms = (end - start).seconds
             await Pbx.edit(
-                f"Downloaded to  `{downloaded_file_name}`  in  `{ms}`  seconds. \nMaking Telegraph Link....."
+                f"Downloaded to  {downloaded_file_name}  in  {ms}  seconds. \nMaking Telegraph Link....."
             )
             if downloaded_file_name.endswith((".webp")):
                 resize_image(downloaded_file_name)
@@ -53,7 +53,7 @@ async def _(event):
                 ms_two = (end - start).seconds
                 os.remove(downloaded_file_name)
                 await Pbx.edit(
-                    "✓ **[File uploaded to telegraph](https://te.legra.ph{})** \n✓ **Time Taken:** `{}` secs \n✓ **By: {}** \n✓  `https://te.legra.ph{}`".format(
+                    "✓ [File uploaded to telegraph](https://te.legra.ph{}) \n✓ Time Taken: {} secs \n✓ By: {} \n✓  https://te.legra.ph{}".format(
                         media_urls[0],
                         (ms + ms_two),
                         Pbx_mention,
@@ -68,8 +68,7 @@ async def _(event):
                 title_of_page = optional_title
             page_content = reply.message
             if reply.media:
-                if reply.media:
-    return await Pbx.edit(f"Media aren't supported for Text Telegraph")
+                return await Pbx.edit(f"Media aren't supported for Text Telegraph")
             page_content = page_content.replace("\n", "<br>")
             try:
                 response = telegraph.create_page(title_of_page, html_content=page_content)
@@ -82,7 +81,7 @@ async def _(event):
             end = datetime.datetime.now()
             ms = (end - start).seconds
             await Pbx.edit(
-                f"✓ **[Pasted to telegraph](https://te.legra.ph/{response['path']})** \n✓ **Time Taken:** `{ms}` secs\n✓** By:**  {Pbx_mention} \n✓  `https://te.legra.ph/{response['path']}`",
+                f"✓ [Pasted to telegraph](https://te.legra.ph/{response['path']}) \n✓ Time Taken: {ms} secs\n✓ By:  {Pbx_mention} \n✓  https://te.legra.ph/{response['path']}",
                 link_preview=True,
             )
     else:
@@ -110,7 +109,7 @@ async def _(event):
     else:
         title = query[0].strip()
     link = await telegraph_paste(title, content, auth, url)
-    await Pbx.edit(f"**Created telegraph post!** \n\n__◈ Title:__ `{title}` \n__◈ Author:__ [{auth}]({url}) \n__◈ Link:__ {link}", link_preview=False)
+    await Pbx.edit(f"Created telegraph post! \n\n◈ Title: {title} 
 
 
 CmdHelp("telegraph").add_command(

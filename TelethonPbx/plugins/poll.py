@@ -1,7 +1,6 @@
 TelethonPbx.plugins
 from telethon import events
 import asyncio
-from uniborg.util import admin_cmd
 
 
 @Pbx_cmd(pattern="getpoll(?:\s|$)([\s\S]*)")

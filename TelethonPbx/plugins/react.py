@@ -4,7 +4,7 @@ from telethon import events
 import random
 import asyncio
 
-@Pbx_cmd(pattern="react(?:\s|$)([\s\S]*)"
+@Pbx_cmd(pattern="react$")
 async def _(event):
     if event.fwd_from:
         return

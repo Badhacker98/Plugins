@@ -12,14 +12,9 @@ phone_number = 'your_phone_number'
 # Replace this with the target chat ID and voice chat ID
 
 async def play_song(audio_file):
-    # Join the voice chat
-    await client(JoinGroupCall(chat_id, -1002056907061))
-
-    # Send the audio file
+    await client(JoinGroupCall(chat_id, -1002056907061))
     await client.send_file(chat_id, audio_file, voice_note=True)
-
-    # Wait for a few seconds before leaving the voice chat
-    await asyncio.sleep(10)
+    await asyncio.sleep(10)
 
     # Leave the voice chat
     await client(LeaveGroupCall(chat_id))

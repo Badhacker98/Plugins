@@ -18,17 +18,12 @@ chat_id = 100123456789  # Replace with the actual chat ID
 voice_chat_id = 'your_voice_chat_id'  # Replace with the actual voice chat ID
 
 async def play_song(audio_file):
-    # Join the voice chat
-    await asyncio(JoinGroupCall(chat_id, voice_chat_id))
-
-    # Send the audio file
-    await asyncio.send_file(chat_id, audio_file, voice_note=True)
-
+    
     # Wait for a few seconds before leaving the voice chat
     await asyncio.sleep(10)
 
     # Leave the voice chat
-    await client(LeaveGroupCall(chat_id))
+    await asyncio(LeaveGroupCall(chat_id))
 
 async def skip_song():
     # Implement your logic to skip the current song

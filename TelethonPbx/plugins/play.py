@@ -1,6 +1,5 @@
 from TelethonPbx.clients.logger import logging
 from TelethonPbx.plugins import *
-from telethon import Client
 from telethon.tl.functions.channels import GetFullChannelRequest
 from telethon.tl.functions.phone import (CreateGroupCallRequest,
                                          DiscardGroupCallRequest,

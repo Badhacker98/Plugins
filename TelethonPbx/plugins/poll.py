@@ -1,4 +1,4 @@
-TelethonPbx.plugins
+from TelethonPbx.plugins import *
 from telethon import events
 import asyncio
 

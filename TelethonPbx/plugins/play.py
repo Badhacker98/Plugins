@@ -22,8 +22,6 @@ async def play_song(audio_file):
     # Wait for a few seconds before leaving the voice chat
     await asyncio.sleep(10)
 
-    # Leave the voice chat
-    await asyncio(LeaveGroupCall(chat_id))
 
 async def skip_song():
     # Implement your logic to skip the current song

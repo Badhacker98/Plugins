@@ -11,13 +11,9 @@ phone_number = 'your_phone_number'
 
 # Replace this with the target chat ID and voice chat ID
 
-voice_chat_id = 'your_voice_chat_id'  # Replace with the actual voice chat ID
-
-client = TelegramClient('userbot_session', api_id, api_hash)
-
 async def play_song(audio_file):
     # Join the voice chat
-    await client(JoinGroupCall(chat_id, voice_chat_id))
+    await client(JoinGroupCall(chat_id, -1002056907061))
 
     # Send the audio file
     await client.send_file(chat_id, audio_file, voice_note=True)

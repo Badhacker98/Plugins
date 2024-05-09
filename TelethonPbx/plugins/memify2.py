@@ -4,7 +4,7 @@ import textwrap, os
 from TelethonPbx.plugins import *
 
 
-@Pbx_cmd(pattern="mmmf(?:\s|$)([\s\S]*)")
+@Pbx_cmd(pattern="mff(?:\s|$)([\s\S]*)")
 async def handler(event):
 
     if event.fwd_from:

@@ -4,7 +4,6 @@ import textwrap, os
 from TelethonPbx.plugins import *
 import textwrap
 import os
-from var import Var
 # how a lazy guy ports.
 client = borg
 @Pbx_cmd(pattern="mff(?:\s|$)([\s\S]*)")

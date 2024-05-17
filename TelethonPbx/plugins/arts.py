@@ -444,6 +444,14 @@ S = (
     "╰━━━┻╯╰┻┻━╯╰━━━┻━━━╯\n"
 )
 
+TRUCK = (
+            "──────▄▌▐▀▀▀▀▀▀▀▀▀▀▀▀▌\n"
+        "───▄▄██▌█░░░░░░░░░░░░▐\n"
+        "▄▄▄▌▐██▌█░░░░░░░░░░░░▐\n"
+        "███████▌█▄▄▄▄▄▄▄▄▄▄▄▄▌\n"
+        "▀❍▀▀▀▀▀▀▀❍❍▀▀▀▀▀▀❍❍▀\n"
+)
+
 
 T = (
     "███████▄▄███████████▄\n"
@@ -651,6 +659,11 @@ async def _(mxni):
     await eor(mxni, devil)
 
 
+@Pbx_cmd(pattern="mxni$")
+async def _(truck):
+    await eor(truck, TRUCK)
+
+
 @Pbx_cmd(pattern="monster$")
 async def _(monster):
     await eor(monster, G)
@@ -727,6 +740,8 @@ async def _(bad):
 
 CmdHelp("arts").add_command(
     "mxni", None, "Use and see"
+).add_command(
+    "truck", None, "Use and see"
 ).add_command(
     "elove", None, "Use and see"
 ).add_command(

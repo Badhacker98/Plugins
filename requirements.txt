@@ -42,6 +42,7 @@ tgcrypto
 validators
 vcam
 WaifuPicsPython
+py-tgcalls==2.0.0
 yt-dlp @ git+https://github.com/Badmunda98/yt-dp-fork
 git+https://github.com/badmunda98/py-googletrans
 git+https://github.com/badmunda98/Telethon

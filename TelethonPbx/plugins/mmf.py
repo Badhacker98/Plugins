@@ -1,4 +1,5 @@
-
+import asyncio
+import os
 import textwrap
 
 from PIL import Image, ImageDraw, ImageFont

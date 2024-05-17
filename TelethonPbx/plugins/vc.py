@@ -1,6 +1,4 @@
 import asyncio
-from pytgcalls.exceptions import NotConnectedError
-
 
 from telethon.tl.functions.channels import GetFullChannelRequest as getchat
 from telethon.tl.functions.phone import CreateGroupCallRequest as startvc

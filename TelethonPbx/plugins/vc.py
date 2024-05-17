@@ -1,4 +1,5 @@
 import asyncio
+from pytgcalls.exceptions import NotConnectedError
 
 
 from telethon.tl.functions.channels import GetFullChannelRequest as getchat
@@ -96,6 +97,7 @@ async def change_title(e):
 
 
 @Pbx_cmd(pattern="joinvc$")
+async def _(event):
     sender = await event.get_sender()
     yins = await event.client.get_me()
     if sender.id != yins.id:

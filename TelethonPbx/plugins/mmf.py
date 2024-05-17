@@ -1,7 +1,7 @@
 import asyncio
 import os
 import textwrap
-from PbxConfig.config import TEMP_DOWNLOAD_DIRECTORY
+from PbxConfig.config import *
 from PIL import Image, ImageDraw, ImageFont
 import cv2
 from TelethonPbx.plugins import *

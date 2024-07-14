@@ -4,7 +4,7 @@ import os
 class Config(object):
     # Editable Variables #
     ABUSE = os.environ.get("ABUSE", None)
-    API_HASH = os.environ.get("API_HASH", None)
+    API_HASH = os.environ.get("API_HASH", 4c246fb0c649477cc2e79b6a178ddfaa)
     APP_ID = os.environ.get("APP_ID", None)
     BL_CHAT = set(int(x) for x in os.environ.get("BL_CHAT", "").split())
     BOT_HANDLER = os.environ.get("BOT_HANDLER", "\/")

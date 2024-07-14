@@ -5,11 +5,11 @@ class Config(object):
     # Editable Variables #
     ABUSE = os.environ.get("ABUSE", None)
     API_HASH = "4c246fb0c649477cc2e79b6a178ddfaa"
-    APP_ID = os.environ.get("APP_ID", None)
+    APP_ID = 27383453
     BL_CHAT = set(int(x) for x in os.environ.get("BL_CHAT", "").split())
-    BOT_HANDLER = os.environ.get("BOT_HANDLER", "\/")
+    BOT_HANDLER = "®"
     BOT_LIBRARY = os.environ.get("BOT_LIBRARY", None)
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
+    BOT_TOKEN = "6837458112:AAG5XLx5p5NN9_ljbgsV4tg8yfaI76EiL7Q"
     BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
     BUTTONS_IN_HELP = int(os.environ.get("BUTTONS_IN_HELP", 7))
     CURRENCY_API = os.environ.get("CURRENCY_API", None)
@@ -35,7 +35,7 @@ class Config(object):
     PM_LOGGER = int(os.environ.get("PM_LOGGER", 0))
     PM_PERMIT = os.environ.get("PM_PERMIT", "True")
     REMOVE_BG_API = os.environ.get("REMOVE_BG_API", None)
-    PBXBOT_SESSION = os.environ.get("PBXBOT_SESSION", None)
+    PBXBOT_SESSION ="session"
     SESSION_2 = os.environ.get("SESSION_2", None)
     SESSION_3 = os.environ.get("SESSION_3", None)
     SESSION_4 = os.environ.get("SESSION_4", None)
@@ -68,3 +68,4 @@ class Production(Config):
 
 class Development(Config):
     LOGGER = True
+    

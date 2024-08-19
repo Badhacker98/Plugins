@@ -226,15 +226,15 @@ if Config.BOT_USERNAME and tbot:
                 text="""**Hey! This is [🕊️⃝‌ٖٖᴘʙx ❤️ᥫ᭡፝֟፝֟](https://t.me/ll_THE_BAD_BOT_ll) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        Button.url("• Updates •", "https://t.me/ll_THE_BAD_BOT_ll"),
-                        Button.url("• Chat •", "https://t.me/II_CHAT_HUB_II"),
+                        Button.url("• ᴜᴘᴅᴀᴛᴇs •", "https://t.me/ll_THE_BAD_BOT_ll"),
+                        Button.url("• ᴄʜᴀᴛ •", "https://t.me/PBX_CHAT"),
                     ],
                     [
-                        Button.url("• Repo •", "https://github.com/Badhacker98/PbXbot/fork"),
-                        Button.url("• Docs •", "https://Pbxbot.tech"),
+                        Button.url("• ʀᴇᴘᴏ •", "https://github.com/Badhacker98/PbXbot/fork"),
+                        Button.url("• ᴅᴏᴄ •", "https://Pbxbot.tech"),
                     ],
                     [
-                        Button.url("◈ PbxBot Network ◈", "https://t.me/ll_THE_BAD_BOT_ll"),
+                        Button.url("◈ ᴘʙxʙᴏᴛ ɴᴇᴛᴡᴏʀᴋ ◈", "https://t.me/PBX_PERMOT"),
                     ],
                 ],
                 link_preview=False,

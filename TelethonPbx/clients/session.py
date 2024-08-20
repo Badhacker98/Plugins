@@ -8,7 +8,7 @@ from PbxConfig import Config
 
 
 def validate_session(session):
-    if "==Pbx" and "bot==" in session.lower():
+    if "==Bad" and "bot==" in session.lower():
         new_session = session[6:-5]
         return str(new_session)
     else:
@@ -16,8 +16,8 @@ def validate_session(session):
         sys.exit()
 
 
-if Config.PBXBOT_SESSION:
-    session = StringSession(validate_session(Config.PBXBOT_SESSION))
+if Config.PbxBOT_SESSION:
+    session = StringSession(validate_session(Config.PbxBOT_SESSION))
 else:
     session = "Pbxbot"
 
@@ -92,7 +92,7 @@ else:
 
 
 PbxBot = TelegramClient(
-    session="Pbx-TBot",
+    session="Bad-TBot",
     api_id=Config.APP_ID,
     api_hash=Config.API_HASH,
     connection=ConnectionTcpAbridged,

@@ -14,8 +14,8 @@ class Development(Config):
     BOT_LIBRARY = "telethon"  # fill 'pyrogram' if you want pyrogram version of Pbxbot else leave it as it is.
     DATABASE_URL = "your value"  # A postgresql database url from elephantsql ( https://www.elephantsql.com/ )
     PBXBOT_SESSION = "Your value"  # telethon or pyrogram string according to BOT_LIBRARY
-    HANDLER = "®"  # Custom Command Handler
-    SUDO_HANDLER = "©"  # Custom Command Handler for sudo users.
+    HANDLER = "."  # Custom Command Handler
+    SUDO_HANDLER = "."  # Custom Command Handler for sudo users.
 
 
 # end of required config

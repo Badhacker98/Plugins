@@ -15,11 +15,11 @@ def validate_session(session):
         print(f"PBXBOT SESSION - Wrong session string!")
         sys.exit()
 
-
 if Config.PBXBOT_SESSION:
-    session = StringSession(validate_session(Config.PBXBOT_SESSION))
+    session = StringSession(str(Config.PBXBOT_SESSION))
 else:
     session = "Pbxbot"
+
 
 try:
     Pbx = TelegramClient(
@@ -36,7 +36,7 @@ except Exception as e:
 
 
 if Config.SESSION_2:
-    session2 = StringSession(validate_session(Config.SESSION_2))
+    session2 = StringSession(str(Config.SESSION_2))
     H2 = TelegramClient(
         session=session2,
         api_id=Config.APP_ID,
@@ -50,7 +50,7 @@ else:
 
 
 if Config.SESSION_3:
-    session3 = StringSession(validate_session(Config.SESSION_3))
+    session3 = StringSession(str(Config.SESSION_3))
     H3 = TelegramClient(
         session=session3,
         api_id=Config.APP_ID,
@@ -64,7 +64,7 @@ else:
 
 
 if Config.SESSION_4:
-    session4 = StringSession(validate_session(Config.SESSION_4))
+    session4 = StringSession(str(Config.SESSION_4))
     H4 = TelegramClient(
         session=session4,
         api_id=Config.APP_ID,
@@ -78,7 +78,7 @@ else:
 
 
 if Config.SESSION_5:
-    session5 = StringSession(validate_session(Config.SESSION_5))
+    session5 = StringSession(str(Config.SESSION_5))
     H5 = TelegramClient(
         session=session5,
         api_id=Config.APP_ID,

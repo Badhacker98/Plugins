@@ -7,7 +7,7 @@ class Config(object):
     API_HASH = os.environ.get("API_HASH", None)
     APP_ID = os.environ.get("APP_ID", None)
     BL_CHAT = set(int(x) for x in os.environ.get("BL_CHAT", "").split())
-    BOT_HANDLER = os.environ.get("BOT_HANDLER", "\/")
+    BOT_HANDLER = os.environ.get("BOT_HANDLER", "/")
     BOT_LIBRARY = os.environ.get("BOT_LIBRARY", None)
     BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
     BOT_USERNAME = os.environ.get("BOT_USERNAME", None)

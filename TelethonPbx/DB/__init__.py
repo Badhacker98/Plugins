@@ -1,11 +1,13 @@
-from PbxConfig import Config
+import os
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import scoped_session, sessionmaker
 
+DATABASE_FILE = "userbot_database.db"  # Local database file
 
 def start() -> scoped_session:
-    engine = create_engine(Config.DATABASE_URL)
+    # SQLite database connection
+    engine = create_engine(f"sqlite:///{DATABASE_FILE}")
     BASE.metadata.bind = engine
     BASE.metadata.create_all(engine)
     return scoped_session(sessionmaker(bind=engine, autoflush=False))
@@ -14,9 +16,6 @@ def start() -> scoped_session:
 try:
     BASE = declarative_base()
     SESSION = start()
-except AttributeError as e:
-    # this is a dirty way for the work-around required for #23
-    print(
-        "DATABASE_URL is not configured. Features depending on the database might have issues."
-    )
+except Exception as e:
+    print("Error configuring the database.")
     print(str(e))
